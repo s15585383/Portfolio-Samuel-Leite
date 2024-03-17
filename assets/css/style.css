@@ -104,3 +104,77 @@ nav a:hover {
     margin-right: 44%;
     margin-top: 2.7%;
 }
+
+
+
+.main-part {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+
+
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+
+
+.big-square{
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-part h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+}
+
+.main-part article {
+    flex: 0 0 77%;
+}
+
+.main-part p {
+    margin-bottom: 30px;
+}
+
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.horiseon-content-box {
+    border: 5px solid var(--secondary);
+    background-color: var(--tertiary);
+    color: var(--tertiary);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+}
+
+span {
+color:black
+}
