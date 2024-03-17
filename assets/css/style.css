@@ -1,3 +1,13 @@
-body {
-    
+*{
+Margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+    background: url(https://static.vecteezy.com/system/resources/previews/001/183/293/original/neutral-low-poly-abstract-banner-vector.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
