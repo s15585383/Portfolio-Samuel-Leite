@@ -100,9 +100,26 @@ nav a:hover {
     display: flex;
     max-width: 200px;
     max-height: 200px;
-    margin-right: 44%;
-    margin-top: 2.7%;
+    margin-right: 40%;
+    margin-top: 0%;
 }
+
+
+
+
+
+.main-part p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(80, 71, 85, 0.616);
+    border-radius: 10px;
+}
+
+
 
 
 
@@ -131,7 +148,7 @@ main {
     margin-right: auto;
 }
 
-.main-part h2 {
+.main-part>h2 {
     flex: 0 0 20%;
     text-align: right;
     padding-right: 15px;
@@ -140,7 +157,7 @@ main {
     line-height: 1.1;
 }
 
-.main-part article {
+.main-part>article {
     flex: 0 0 77%;
 }
 
@@ -148,7 +165,7 @@ main {
     margin-bottom: 30px;
 }
 
-.content-box {
+.content-box-big {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -156,7 +173,7 @@ main {
 
 
 
-.horiseon-content-box {
+.content-box-small {
     border: 5px solid var(--secondary);
     background-color: var(--tertiary);
     color: var(--tertiary);
@@ -180,11 +197,196 @@ color:black
 
 
 
-.content-box:first-child {
+.content-box-small:first-child {
     min-height: 400px;
     flex-basis: 100%;
-    background-image: url(digital-marketing-meeting.jpg);
+    background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     color: var(--secondary);
     text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px darkblue;
 }
+
+
+
+.star-anise {
+    background-image: url(https://i1.wp.com/dhcrop.bsmrau.net/wp-content/uploads/2016/08/star-anise.jpg?zoom=3&resize=400%2C280);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--secondary);
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px darkblue;
+}
+
+
+
+.Cardamom {
+    background-image: url(https://resize.hswstatic.com/w_907/gif/cardamom-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--secondary);
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px darkblue;
+}
+
+
+
+.Sage {
+    background-image: url(https://www.publicdomainpictures.net/pictures/180000/velka/culinary-sage-quotsalvia-officinalisquot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--secondary);
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px darkblue;
+}
+
+
+
+
+.Cinnamon {
+    background-image: url(https://www.besthealthmag.ca/wp-content/uploads/2019/03/Benefits-of-Cinnamon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--secondary);
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px darkblue;
+}
+
+
+
+
+
+.content-box-small:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.content-box-small div {
+    background-color: var(--secondary);
+    padding: 8px 10px;
+}
+
+
+
+
+
+.content-box-small h3 {
+    font-size: 1.6rem;
+}
+
+
+
+
+
+#contact-me address a {
+    color: var(--primary);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+}
+
+
+
+
+
+#contact-me address a:hover {
+    background-size: 100% 88%;
+    color: var(--secondary);
+    box-shadow: inset 00 2px var(--secondary);
+}
+
+
+
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+
+    .main-part {
+        margin: 25px 0;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+
+    #aboutmejpg {
+        margin-right: 0%
+    }
+
+
+    .main-part p {
+        margin-left: 0%;
+    }
+
+
+    .main-part>h2,
+    .page-section>div {
+        flex: 0 0 100%;
+    }
+
+
+    .main-part>h2 {
+        border-right: none;
+        border-bottom: 4px solid var(--primary);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .main-part,
+    .main-part:first-child {
+        flex-basis: 100%;
+    }
+
+
+    .main-part:first-child {
+        min-height: 270px;
+    }
+
+
+    .division-banner {
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .contact-me address {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+
+
+
+}
+
