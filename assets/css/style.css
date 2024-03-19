@@ -4,7 +4,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
-
+/* primary pallete selected */
 
 :root {
     --primary: rgb(10, 9, 9);
@@ -14,14 +14,14 @@ box-sizing: border-box;
     --light: rgb(104, 88, 67);
 }
 
-
+/* primary font */
 
 body {
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* background formatting */
 
 html {
     background: url(https://wallpapercave.com/wp/wp8460950.jpg) no-repeat center center fixed;
@@ -31,7 +31,7 @@ html {
     background-size: cover;
 }
 
-
+/* header formatting with name and 3 topics */
 
 header {
     padding: 15px 6% 15px 0;
@@ -56,7 +56,7 @@ header h1 {
     color: rgb(249, 249, 250);
 }
 
-
+/* nav section linked to the main-part */
 
 nav a {
     text-decoration: none;
@@ -79,8 +79,8 @@ nav a:hover {
     box-shadow: inset 00 2px var(--primary);
 }
 
-
-
+/* end of nav formatting */
+/* division banner made as a visual separator of the index above and the principal information */
 .division-banner {
     background: rgb(3, 30, 73);
     background-size: cover;
@@ -94,7 +94,7 @@ nav a:hover {
     text-align: right;
 }
 
-
+/* avatar image formatting */
 
 #aboutmejpg {
     display: flex;
@@ -106,7 +106,7 @@ nav a:hover {
 }
 
 
-
+/* main-part formatting, general structure for the site */
 
 
 .main-part p {
@@ -198,7 +198,7 @@ span {
 color:rgb(15, 15, 15)
 }
 
-
+/* formatting each project box, keeping in mind that the first project should be in evidence even when page is shrunk */
 
 .content-box-small:first-child {
     min-height: 400px;
@@ -276,7 +276,7 @@ color:rgb(15, 15, 15)
 }
 
 
-
+/* formatting the contact me section */
 
 
 #contact-me address a {
@@ -304,7 +304,8 @@ color:rgb(15, 15, 15)
     box-shadow: inset 00 2px var(--secondary);
 }
 
-
+/* end of contact me */
+/* media quiries so the page behaves appropriately when the dimensions are messed with */
 
 
 @media screen and (max-width: 980px) {
